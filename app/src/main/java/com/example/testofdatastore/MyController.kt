@@ -27,10 +27,10 @@ class MyController(private val context: Context) {
     suspend fun saveValueToDataStore(value: Int) {
         val key = intPreferencesKey("example_counter")
         context.dataStore.edit { settings ->
-            val currentCounterValue = settings[key] ?: 0
-            settings[key] = currentCounterValue + 1
+            settings[key] = value
         }
     }
+
 }
 /*
 * val key = preferencesKey<Int>("value_key")

@@ -16,7 +16,6 @@ import androidx.compose.ui.unit.dp
 import com.example.testofdatastore.ui.theme.TestOfDataStoreTheme
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.example.testofdatastore.Greeting
 import kotlinx.coroutines.launch
 
 @Composable
@@ -39,7 +38,7 @@ fun MyView(controller: MyController) {
             modifier = Modifier.padding(16.dp)
         )
 
-        Greeting(name = value.toString(), modifier = Modifier.weight(1f))
+
 
         Row(
             modifier = Modifier
